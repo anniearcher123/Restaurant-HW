@@ -1,0 +1,45 @@
+ul {
+    list-style: none;
+    margin-left: 160px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header::after {
+    content:"";
+    background: url(images/background.jpeg);
+    opacity: .75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    max-height: 200px;
+    width: 100%;
+}
+
+#hoursInfo {
+    margin-top: 150px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Arima', cursive;
+}
+
+#mapInfo {
+    margin-top: 100px;
+    background-color: darkolivegreen;
+    min-height: 800px;
+    vertical-align: baseline;
+}
+
+iframe {
+    margin-top: 50px;
+    margin-left: 55px;
+    float: left;
+    position: absolute;
+}

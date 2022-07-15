@@ -1,0 +1,47 @@
+ul {
+    list-style: none;
+    margin-left: 160px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    color:black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header::after {
+    content:"";
+    background: url(images/background.jpeg);
+    opacity: .75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    max-height: 200px;
+    width: 100%;
+}
+
+#lunchMenu {
+    justify-content: center;
+}
+
+#lunchHeading {
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Arima', cursive;
+    text-decoration: underline;
+}
+
+#dinnerHeading {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Arima', cursive;
+}
+
+body {
+    background-color: darkolivegreen;
+    color: white
+}
