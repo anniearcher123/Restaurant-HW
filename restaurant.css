@@ -1,4 +1,4 @@
-#duckSalad {
+#banner {
      color: black;
      text-align: center;
      font-weight: bold;
@@ -6,13 +6,17 @@
 }
 
 .foodHeading {
-    margin-top: 15px;
+    margin-top: 30px;
+}
+
+#restaurant-name {
+    margin-top: 14px;
 }
 
 
-#duckSalad::after {
+#banner::after {
     content:"";
-    background: url(images/The-Best-Food-In-Vietnam-Main.webp);
+    background: url(images/food-banner3.jpeg);
     opacity: .70;
     top: 60px;
     left: 0;
@@ -21,7 +25,9 @@
     position: absolute;
     z-index: -1;
     max-height: 400px;
-    width: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul {
@@ -60,21 +66,12 @@ header {
     position: fixed;
     width: 100%;    
     font-family: 'Bebas Neue', cursive;
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
-header::after {
-    content:"";
-    background: url(images/background.jpeg);
-    opacity: .50;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    max-height: 200px;
-    width: 100%;
-}
+
 
 footer::after {
     content:"";
@@ -115,8 +112,12 @@ footer {
   }
 
 @media only screen and (max-width: 1300px) {
-     #customerReviews::after {
+     #banner::after {
         display: none;
+     }
+
+     #customerReviews {
+        margin-top: none;
      }
 
      footer::after {
