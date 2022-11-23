@@ -1,0 +1,151 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 0.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar reviews reviews reviews"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+p {
+    font-family: 'Arima', cursive;
+}
+
+#sidebar-links {
+    font-family: 'Arima', cursive;
+}
+
+nav {
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    background-color: black;
+    color: whitesmoke;
+}
+
+main{
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border: 1px solid black;
+}
+
+
+#sidebar {
+    background-color: black;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+#reviews {
+    background-color: black;
+    grid-area: reviews;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+#review-image {
+    max-width: 10vw;
+    max-height: 12vh;
+    margin-bottom: 10px;
+}
+
+#content1 {
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#content2 {
+    border: 1px solid black;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content3 {
+    border: 1px solid black;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+@media only screen and  (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 0.4fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "reviews"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+}
